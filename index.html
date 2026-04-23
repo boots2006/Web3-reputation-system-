@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Web3 Reputation System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <h2>Reputation</h2>
+    <p>Dashboard</p>
+    <p>Leaderboard</p>
+  </aside>
+
+  <main class="main">
+
+    <h1>Web3 Reputation System</h1>
+
+    <!-- AUTH -->
+    <div class="auth">
+      <input id="email" placeholder="Email">
+      <input id="password" type="password" placeholder="Password">
+      <button onclick="register()">Register</button>
+      <button onclick="login()">Login</button>
+      <button onclick="logout()">Logout</button>
+      <p id="userInfo"></p>
+    </div>
+
+    <!-- POST -->
+    <div class="post-box">
+      <input id="postInput" placeholder="Write something...">
+      <button onclick="addPost()">Post</button>
+    </div>
+
+    <!-- FEED -->
+    <h2>Feed</h2>
+    <div id="feed"></div>
+
+    <!-- LEADERBOARD -->
+    <h2>Leaderboard</h2>
+    <div id="leaderboard"></div>
+
+  </main>
+
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+  </html>
